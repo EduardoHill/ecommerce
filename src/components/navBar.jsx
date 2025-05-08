@@ -1,35 +1,58 @@
 import { ShoppingCart } from 'lucide-react'
 
+import avatar from '../images/avatar.png'
+import { Link } from 'react-router-dom'
+
 export function NavBar() {
   return (
-    <nav className=' w-7xl flex border-b  border-b-zinc-500 items-center justify-between p-8 gap-5'>
+    <nav className=' max-w-7xl mx-auto w-full flex border-b  border-b-zinc-500 items-center justify-between p-8 gap-5'>
       <div className='flex gap-8'>
-        <h1 className=' text-4xl'>sneakers</h1>
+        <Link to={'/'} className=' text-4xl'>
+          sneakers
+        </Link>
         <div className=' flex items-center justify-center gap-5'>
-          <button className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'>
+          <Link
+            to={'/colletions'}
+            className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+          >
             <span>Collections</span>
-          </button>
-          <button className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'>
+          </Link>
+          <Link
+            to={'/men'}
+            className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+          >
             <span>Men</span>
-          </button>
-          <button className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'>
+          </Link>
+          <Link
+            to={'/women'}
+            className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+          >
             <span>Women</span>
-          </button>
-          <button className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'>
+          </Link>
+          <Link
+            to={'/about'}
+            className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+          >
             <span>About</span>
-          </button>
-          <button className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'>
+          </Link>
+          <Link
+            to={'/contact'}
+            className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+          >
             <span>Contact</span>
-          </button>
+          </Link>
         </div>
       </div>
       <div className='flex gap-8 ml-5 items-center'>
-        <div>
-          <ShoppingCart className='cursor-pointer' />
+        <div className='flex'>
+          <ShoppingCart className='cursor-pointer relative' />
+          <span className='flex items-center justify-center text-[10px] bg-red-500 border-red-500 rounded-[50%] h-[20px] w-[20px] absolute mt-[-10px] ml-[15px] '>
+            +3
+          </span>
         </div>
         <button>
           <img
-            src='#'
+            src={avatar}
             alt='Imagem de usuario'
             className='border rounded-[50%] h-10 w-10 cursor-pointer hover:border-amber-500'
           />
