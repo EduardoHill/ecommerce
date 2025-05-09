@@ -3,7 +3,7 @@ import { Car, GitCommitHorizontal, House, Package } from 'lucide-react'
 export function Status() {
   return (
     <div className='flex flex-col w-2xl bg-zinc-300 rounded-2xl p-3 gap-4'>
-      <h1 className='text-2xl font-bold'>Compra id</h1>
+      <h1 className='text-2xl font-bold'>Compra #id</h1>
       <div className='flex justify-center w-full'>
         <Package size={50} />
         <GitCommitHorizontal size={50} />

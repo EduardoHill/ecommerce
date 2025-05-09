@@ -14,14 +14,14 @@ export function NavBar() {
         </Link>
         <div className=' flex items-center justify-center gap-5'>
           <Link
-            to={'/colletions'}
+            to={'/'}
             className={`cursor-pointer   ${
-              isActive('/colletions')
+              isActive('/')
                 ? 'border-b text-black border-b-amber-500'
                 : 'text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
             }`}
           >
-            <span>Collections</span>
+            <span>All</span>
           </Link>
           <Link
             to={'/men'}
