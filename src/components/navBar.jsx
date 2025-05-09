@@ -1,9 +1,11 @@
 import { ShoppingCart } from 'lucide-react'
 
 import avatar from '../images/avatar.png'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 export function NavBar() {
+  const location = useLocation()
+  const isActive = (path) => location.pathname === path
   return (
     <nav className=' max-w-7xl mx-auto w-full flex border-b  border-b-zinc-500 items-center justify-between p-8 gap-5'>
       <div className='flex gap-8'>
@@ -13,31 +15,51 @@ export function NavBar() {
         <div className=' flex items-center justify-center gap-5'>
           <Link
             to={'/colletions'}
-            className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+            className={`cursor-pointer   ${
+              isActive('/colletions')
+                ? 'border-b text-black border-b-amber-500'
+                : 'text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+            }`}
           >
             <span>Collections</span>
           </Link>
           <Link
             to={'/men'}
-            className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+            className={`cursor-pointer   ${
+              isActive('/men')
+                ? 'border-b text-black border-b-amber-500'
+                : 'text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+            }`}
           >
             <span>Men</span>
           </Link>
           <Link
             to={'/women'}
-            className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+            className={`cursor-pointer   ${
+              isActive('/women')
+                ? 'border-b text-black border-b-amber-500'
+                : 'text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+            }`}
           >
             <span>Women</span>
           </Link>
           <Link
             to={'/about'}
-            className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+            className={`cursor-pointer   ${
+              isActive('/about')
+                ? 'border-b text-black border-b-amber-500'
+                : 'text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+            }`}
           >
             <span>About</span>
           </Link>
           <Link
             to={'/contact'}
-            className='cursor-pointer text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+            className={`cursor-pointer   ${
+              isActive('/contact')
+                ? 'border-b text-black border-b-amber-500'
+                : 'text-zinc-500 hover:border-b hover:text-black border-b-amber-500'
+            }`}
           >
             <span>Contact</span>
           </Link>
@@ -50,13 +72,13 @@ export function NavBar() {
             +3
           </span>
         </div>
-        <button>
+        <Link to={'/user'}>
           <img
             src={avatar}
             alt='Imagem de usuario'
             className='border rounded-[50%] h-10 w-10 cursor-pointer hover:border-amber-500'
           />
-        </button>
+        </Link>
       </div>
     </nav>
   )
