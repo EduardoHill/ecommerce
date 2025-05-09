@@ -8,7 +8,7 @@ export function NavBar() {
     <nav className=' max-w-7xl mx-auto w-full flex border-b  border-b-zinc-500 items-center justify-between p-8 gap-5'>
       <div className='flex gap-8'>
         <Link to={'/'} className=' text-4xl'>
-          sneakers
+          SneakersHub
         </Link>
         <div className=' flex items-center justify-center gap-5'>
           <Link
