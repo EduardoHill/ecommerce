@@ -5,7 +5,7 @@ export function Sidebar() {
   const isActive = (path) => location.pathname === path
 
   return (
-    <div className='flex pt-9  h-screen w-[20%] bg-zinc-200 '>
+    <div className='flex pt-9  h-screen w-[300px] bg-zinc-200 '>
       <div className='h-full w-full '>
         <Link to={'/'} className='text-2xl font-bold'>
           SH

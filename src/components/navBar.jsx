@@ -7,7 +7,7 @@ export function NavBar() {
   const location = useLocation()
   const isActive = (path) => location.pathname === path
   return (
-    <nav className=' max-w-7xl mx-auto w-full flex border-b  border-b-zinc-500 items-center justify-between p-8 gap-5'>
+    <nav className=' max-w-7xl mx-auto w-full flex border-b  border-b-zinc-500 items-center justify-between pt-8 pb-8 gap-5'>
       <div className='flex gap-8'>
         <Link to={'/'} className=' text-4xl'>
           SneakersHub
