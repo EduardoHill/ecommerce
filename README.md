@@ -1,12 +1,20 @@
-# React + Vite
+# 🏠 Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Preview do site](./assets/images/Captura%20de%20tela%202025-05-14%20172738.png)
 
-Currently, two official plugins are available:
+## 👋 Seja bem-vindo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto foi desenvolvido para o treinamento de Reac e react-router-dom.
+É um ecommerce funcional utilizando rotas para cada pagina.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- Tailwind Css
+- React Router Dom 
+
+## 💡 O que aprendi/fiz de novo
+
+- Manipulação de Rotas com `router-dom`
+- Verificação de localização com `useLocation`
+- Estilização com Tailwind CSS
