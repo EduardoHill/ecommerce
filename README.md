@@ -1,6 +1,6 @@
 # 🏠 Ecommerce
 
-![Preview do site](./assets/images/Captura%20de%20tela%202025-05-14%20172738.png)
+![Preview do site](./src/images/image.png)
 
 ## 👋 Seja bem-vindo
 
